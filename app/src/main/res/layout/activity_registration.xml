@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    tools:context=".Registration"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/RegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintBottom_toTopOf="@+id/nameView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        app:cardBackgroundColor="#9C27B0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterText"
+        app:layout_constraintBottom_toTopOf="@id/ageView"
+        tools:layout_editor_absoluteY="119dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:labelFor="@id/Name"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:textColorHint="#CEC6C6"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        app:cardBackgroundColor="#9C27B0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintTop_toBottomOf="@id/nameView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mobileView"
+        tools:layout_editor_absoluteY="238dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:labelFor="@id/Age"
+                android:text="Age"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:hint="Enter your age"
+                android:inputType="number"
+                android:textColorHint="#CEC6C6"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mobileView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        app:cardBackgroundColor="#9C27B0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageView"
+        app:layout_constraintBottom_toTopOf="@id/genderView"
+        tools:layout_editor_absoluteY="358dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:labelFor="@id/Mobile"
+                android:text="Mobile No."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                android:hint="Enter your mobile no"
+                android:inputType="number"
+                android:textColorHint="#CEC6C6"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/genderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        app:cardBackgroundColor="#9C27B0"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileView"
+        app:layout_constraintBottom_toTopOf="@id/Submit"
+        tools:layout_editor_absoluteY="476dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Gender"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/GenderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button_style_2"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genderView"
+        app:layout_constraintVertical_bias="0.95" />
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="200dp"-->
+    <!--        app:cardBackgroundColor="#9C27B0"-->
+    <!--        app:cardCornerRadius="20dp"-->
+    <!--        app:cardElevation="20dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical"-->
+    <!--            >-->
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:text="Username"-->
+    <!--                android:layout_margin="10dp"-->
+    <!--                android:textSize="18sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:hint="Enter username"-->
+    <!--                android:textColorHint="#CEC6C6"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:inputType="textEmailAddress"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                android:id="@+id/Username"-->
+    <!--                />-->
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:text="Password"-->
+    <!--                android:layout_margin="10dp"-->
+    <!--                android:textSize="18sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:hint="Enter password"-->
+    <!--                android:textColorHint="#CEC6C6"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:inputType="textPassword"-->
+    <!--                android:backgroundTint="@color/white"-->
+    <!--                android:id="@+id/Password"-->
+    <!--                />-->
+    <!--            <Button-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="SIGN IN"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:background="@drawable/round_button_style"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:id="@+id/SignIn"-->
+    <!--                />-->
+    <!--        </LinearLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

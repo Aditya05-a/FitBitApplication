@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "661286042271",
+    "project_id": "fitbitapplication",
+    "storage_bucket": "fitbitapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661286042271:android:d3cc49294232f3bff340aa",
+        "android_client_info": {
+          "package_name": "com.aditya.classquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjzU-nS8hYWlvQKcaNhzSkvvNwrcpjK2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
